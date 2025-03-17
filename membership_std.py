@@ -29,6 +29,7 @@ def sort(ls: List) -> None:
 
 
 def bi_search(ls: List, t: int) -> int:
+	'''if targert value exists in the list, return its index, otherwise return -1'''
 	if len(ls) == 0:
 		return
 	
@@ -47,6 +48,7 @@ def bi_search(ls: List, t: int) -> int:
 	
 
 def membership(ls: List, t: int) -> bool:
+	'''return whether the target is included in the list'''
 	sort(ls)
 	if bi_search(ls, t) == -1:
 		return False
